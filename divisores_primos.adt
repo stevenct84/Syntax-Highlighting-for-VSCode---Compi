@@ -1,0 +1,44 @@
+{
+    Funcion auxiliar de divisores_primos.
+    Entradas:
+        numero: valor numerico (cantones)
+    Salida:
+        retorna un booleano(enchilada)
+}
+
+Masa es_primo(Cantones numero): Enchilada
+🥟
+    Pozol(numero <= 1)🥟 
+        Entregar(Sinchile);
+    🥩;
+    🌮 recorrido : Cantones = 2;
+    Batir(recorrido < numero)🥟
+        Pozol(numero % recorrido == 0)🥟 
+            Entregar(Sinchile);
+        🥩; 
+        recorrido++;  
+    🥩;
+    Entregar(Conchile);
+🥩;
+
+
+{  
+    La funcion(masa) muestra los divisores del número
+    que son números primos
+    Entradas:
+        numero: valor numerico (cantones)
+    Salida:
+        muestra prints(Servir) con los divisores primos del numero
+}
+Masa divisores_primos(Cantones numero): Cantones
+🥟
+    🌮 divisor : Cantones = 1;
+    Servir("Los divisores primos del numero son: ")
+    Batir(recorrido < numero)🥟
+        Pozol(divisor <= numero == 0 && es_primo(divisor))🥟
+            Servir(divisor);
+        🥩;
+        Entregar(0);
+    🥩;
+
+🥩;

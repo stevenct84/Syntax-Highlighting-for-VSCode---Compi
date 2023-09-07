@@ -1,0 +1,24 @@
+{Obtener la cantidad de espacios en blanco en una oracion}
+
+Masa espacios_blancos(): Cantones
+🥟 
+    {perdir la frase}
+    🌮 frase : Relleno = Pedido("Ingrese una frase: ");
+    {obtener la cantidad de letras de la frase}
+    🌮 cantidad : Cantones = Costo(frase);
+    {llevar la cuenta de los espacios en blanco}
+    🌮 suma : Cantones = 0;
+    {letra que se esta comparando de la frase}
+    🌮 letra_actual: Relleno
+    🌮 i : Cantones = 0;
+    Batir(i != cantidad)🥟
+        letra_actual = Cortar(frase, [i:i+1])
+        Pozol(letra_actual == " ")🥟
+            suma++;
+        🥩;
+        i++;
+    🥩;
+    Entregar(suma);
+🥩;
+    
+    
