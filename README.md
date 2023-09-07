@@ -1,6 +1,6 @@
 # Syntax-Highlighting-for-VSCode
 
-Resaltado de colores para el lenguaje de compiladores.
+Resaltado de colores en VSCode para el lenguaje de compiladores.
 
 Seguir:
 
