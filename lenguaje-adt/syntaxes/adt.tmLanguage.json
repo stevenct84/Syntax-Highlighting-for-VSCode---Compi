@@ -1,0 +1,104 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Lenguaje de Programación ADT",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		},
+		{
+			"include": "#comments"
+		},
+		{
+			"include": "#types"
+		},
+		{
+			"include": "#def_fun"
+		},
+		{
+			"include":"#identifier"
+		},
+		{
+			"include": "#boolean"
+		},
+		{
+			"include": "#support_function"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [{
+				"name": "keyword.control.adt",
+				"match": "\\b(Pozol|Picante|Batir|Mezclar|Entregar)\\b"
+			}]
+		},
+		"strings": {
+			"name": "string.quoted.double.adt",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.adt",
+					"match": "\\\\."
+				}
+			]
+		},
+		"comments":{
+			"patterns":
+			[
+				{
+					"begin": "{",
+					"beginCaptures": {
+						"0":{
+							"name":"punctuation.definition.comment.adt"
+						}
+					},
+					"end": "}",
+					"name":"comment.block.adt"
+
+				}
+			]
+		},
+		"types":{
+			"patterns": [{
+				"name": "entity.name.type",
+				"match": "\\b(Relleno|Cantones|Surtido|Enchilada)\\b"
+			}]
+		},
+		"identifier":{
+			"patterns": [{
+				"name": "variable.name",
+				"match": "\\b[a-z][a-zA-z0-9_]*\\b"
+			}]
+		},
+		"def_fun":{
+			"patterns": [
+				{
+				  "name": "keyword.function-definition",
+				  "match": "\\bMasa\\b"
+				}
+			  ]
+			
+		},
+		"boolean":{
+			"patterns": [
+				{
+				  "name": "keyword.boolean",
+				  "match": "\\b(Sinchile|Conchile)\\b"
+				}
+			  ]
+			
+		},
+		"support_function":{
+			"patterns": [
+				{
+				  "name": "keyword.builtin-function",
+				  "match": "\\b(Costo|Pedido|Cortar|Saborear|Servir)\\b"
+				}
+			  ]
+		}
+	},
+	"scopeName": "source.adt"
+}

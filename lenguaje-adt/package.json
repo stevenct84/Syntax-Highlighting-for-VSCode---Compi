@@ -1,0 +1,25 @@
+{
+  "name": "lenguaje-adt",
+  "displayName": "Lenguaje ADT ",
+  "description": "Lenguaje de Programación de los Adeptos a las Tortillas",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.81.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "adt",
+      "aliases": ["Lenguaje de Programación ADT", "adt"],
+      "extensions": [".adt"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "adt",
+      "scopeName": "source.adt",
+      "path": "./syntaxes/adt.tmLanguage.json"
+    }]
+  }
+}
