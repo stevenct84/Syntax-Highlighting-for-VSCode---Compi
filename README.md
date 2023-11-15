@@ -1,9 +1,14 @@
 # Syntax-Highlighting-for-VSCode
 
-Resaltado de colores en VSCode para el lenguaje de compiladores.
+Resaltado de colores en VSCode para el lenguaje de Adeptos a las Tortillas realizado en Compiladores e Intérpretes .
 
-Seguir:
+## Pasos a seguir:
 
-- La carpeta lenguaje-adt, colocar en %USERPROFILE% \\.vscode\extensions
+En Windows:
+  - La carpeta lenguaje-adt, colocar en %USERPROFILE% \\.vscode\extensions
 
-- Los códigos divisores_primos.adt y espacio_blanco.adt
+En linux 
+  - Entrar a la carpeta del proyecto
+  - mv lenguaje-adt ~/.vscode/extensions
+
+Se adjuntan ejemplos de divisores_primos.adt y espacio_blanco.adt para ver los resultados
